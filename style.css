@@ -1,7 +1,7 @@
 *{ box-sizing: border-box;}
 
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	background: #4db9e9;
 }
@@ -72,6 +72,11 @@ input {
 	color: #fff;
 	text-shadow: 0 -1px 0 #666;
 }
+#submit:hover, #add:hover, .delete:hover{
+	background:rgba(217,92,92,.75);
+	transition: background .3s ease;
+	cursor: pointer;
+}
 .subbtn {
 	text-align: center;
 	margin-top: 5em;
@@ -83,9 +88,27 @@ input {
 }
 input[readonly] {
 	background: none;
+	font-size: 1em;
+	width: 75%;
+	margin-bottom: 1em; 
+	text-align: left;
 }
 #iteminput, #list {
 	text-align: center;
+}
+footer {
+	text-align: center;
+	color: white;
+	text-shadow: 0 1px 0 #666;
+	font-size: 1.2em;
+}
+footer a {
+	color: #D95C5C;
+	text-decoration: none;
+}
+footer a:hover {
+	border-bottom: 1px solid #D95C5C;
+	box-shadow: 0 1px 0 #666;
 }
 /*.delete {
 	text-decoration: none;
@@ -103,8 +126,58 @@ input[readonly] {
 	input {
 		display: block;
 		margin-bottom: 1em;
+		width: 80%;
+	}
+	input[readonly] {
+	/*	width: 10em;*/
+	}
+	#newitem {
+		width: 10em;
 	}
 }
 @media (max-width: 34em) {
+	main {
+		padding: 5px;
+	}
 
+	#iteminput {
+		width: 95%;
+		margin: 0 auto;
+	}
+	#newitem{
+		width: 75%;
+		margin-right: 0;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	#add {
+		width: 20%;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		display: inline-block;
+		text-align: center;
+		padding-left: 1%;
+		padding-right: 1%;
+		font-size: 1.25em;
+		padding-top: .8em;
+		padding-bottom: .65em;
+	}
+	#list {
+		width: 95%;
+		margin: 0 auto;
+	}
+	input[name=items] {
+		font-size: 1em;
+		margin: 0;
+		width: 75%;
+		text-align: left;
+		padding-left:0;
+		padding-right: 0;
+		}
+	.delete {
+		font-size: 1.2em;
+		padding:.25em;
+		display: inline-block;
+		width: 20%;
+	}
 }

@@ -14,7 +14,7 @@ function deleteItem(){
 };
 function addItem(){
 	var item = $('#newItem').val();
-	$('#list').append('<div><input name="items" readonly /><span><a class="delete">Delete</a></span></div>');
+	$('#list').append('<div><input name="items" readonly /><span><a class="delete">X</a></span></div>');
 	$('input[readonly]').last().attr('value', item);
 	$('input[readonly]').last().slideDown();
 	$('#newItem').val('');
