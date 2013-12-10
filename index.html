@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Mail Santa</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<main>
+<h1>Mail Santa</h1>
+
+<p>Every year, Santa spends thousands of hours preparing for this special time of year! To streamline the process, Santa has created this website so you can tell him what you want! Fill out the form below and Santa will reply as soon as possible! Merry Christmas!</p>
+
+	<label for="Name">Name</label><input type="text" id="Name" name="name" placeholder="Your Name" tabindex="1" />
+	<label for="Email">Your Email</label><input type="email" id="Email" name="email" placeholder="Your Email" tabindex="2" />
+	<label for="Parent-Email">Parent/Guardian Email</label><input type="email" id="Parent-Email" name="parents" placeholder="Parent's Email" tabindex="3" />
+	<p class="question">What do you want for Christmas?</p>
+
+<div id="iteminput"><input type="text" id="newItem" placeholder="A puppy!" tabindex="4"><a id="add">Add</a></div>
+
+<div id="list">
+
+</div>
+
+<p class="subbtn"><span id="submit">Submit</span></p>
+
+</main>
+
+
+
+</div>
+
+<div id="results"> 
+<p id="returnmsg" class="sucess"></p>
+</div>
+
+<script src="jquery-1.10.2.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
