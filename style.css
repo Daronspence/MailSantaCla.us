@@ -8,10 +8,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', Arial, sans-serif;
 }
-label, input {
-	/*display: block;*/
-	width: 33.333%;
-}
+
 h1 {
 	font-size: 4em;
 	text-align: center;
@@ -32,9 +29,16 @@ main {
 	padding: 1em;
 	border-radius: 10px;
 }
+form {
+	text-align: center;
+}
 label {
-	visibility: hidden;
-	display: none;
+	width: 10em;
+	display: inline-block;
+	text-align: left;
+}
+label:hover {
+	cursor: pointer;
 }
 input {
 	font-size: 1.5em;
@@ -46,13 +50,27 @@ input {
 	border: none; 
 	font-family: "Raleway", Arial, sans-serif;
 }
-.sucess {
+.success {
 	color: white;
 	background: rgba(48,255,85,.5);
-	width: 30em;
+	width: 50%;
 	text-align: center;
 	border-radius: 4px;
 	margin: 2em auto;
+}
+.itemerror{
+	color: #D95C5C;
+	text-transform: uppercase;
+}
+form div {
+	position: relative;
+	margin-bottom: 1em;
+}
+form div label.error {
+	color: #D95C5C;
+	position: absolute;
+	top: 17px;
+	right: -5px;
 }
 .question {
 	text-align: center;
@@ -63,6 +81,7 @@ input {
 	padding: 1em;
 }
 #submit, #add, .delete {
+	-webkit-appearance: none;
 	text-decoration: none;
 	font-size: 1.5em;
 	background: #D95C5C;
@@ -77,9 +96,13 @@ input {
 	transition: background .3s ease;
 	cursor: pointer;
 }
+#botcheck input, #botcheck label {
+	width: auto;
+	padding:1em;
+}
 .subbtn {
 	text-align: center;
-	margin-top: 5em;
+	margin-top: 1em;
 }
 #newItem, [name="items"] {
 	display: inline;
@@ -110,6 +133,9 @@ footer a:hover {
 	border-bottom: 1px solid #D95C5C;
 	box-shadow: 0 1px 0 #666;
 }
+#flake {
+	text-shadow: 1px 1px 0 #000;
+}
 /*.delete {
 	text-decoration: none;
 	background: #D95C5C;
@@ -119,13 +145,22 @@ footer a:hover {
 	color: #fff;
 	text-shadow: 0 -1px 0 #666;
 }*/
-@media (max-width: 49em) {
+@media (max-width: 52em) {
 	.container {
 		width: 95%;
 	}
-	input {
+	form div label {
+		text-align: center;
+		width: auto;
+	}
+	form div label.error {
+		position: inherit;
 		display: block;
-		margin-bottom: 1em;
+		top: 0;
+		right: 0;
+	}
+	form div input {
+		display: block;
 		width: 80%;
 	}
 	input[readonly] {
@@ -133,6 +168,12 @@ footer a:hover {
 	}
 	#newitem {
 		width: 10em;
+	}
+	#botcheck *{
+		display: inline;
+	}
+	.success {
+		width: 75%;
 	}
 }
 @media (max-width: 34em) {
