@@ -25,6 +25,12 @@ function addItem(){
 	$('input[readonly]').last().slideDown();
 	$('#newItem').val('');
 }};
+$('#newItem').keypress(function(e) {
+    if(e.which == 13) {
+        addItem();
+        e.preventDefault();
+    }
+});
 
 $(function() {
 	$('#add').on('vclick', addItem);

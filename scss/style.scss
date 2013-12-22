@@ -19,29 +19,29 @@ h1 {
 	width: 50em;
 	margin: 0 auto;
 	@include background(linear-gradient(-45deg, 
-										white 0%, white 5%, 
-										$red 5%, $red 10%, 
-										white 10%, white 15%, 
-										$red 15%, $red 20%, 
-										white 20%, white 25%, 
-										$red 25%, $red 30%, 
-										white 30%, white 35%, 
-										$red 35%, $red 40%, 
-										white 40%, white 45%, 
-										$red 45%, $red 50%, 
-										white 50%, white 55%, 
-										$red 55%, $red 60%, 
-										white 60%, white 65%, 
-										$red 65%, $red 70%, 
-										white 70%, white 75%, 
-										$red 75%, $red 80%, 
-										white 80%, white 85%, 
-										$red 85%, $red 90%, 
-										white 90%, white 95%,
-										$red 95%, $red
-										));
+		white 0%, white 5%, 
+		$red 5%, $red 10%, 
+		white 10%, white 15%, 
+		$red 15%, $red 20%, 
+		white 20%, white 25%, 
+		$red 25%, $red 30%, 
+		white 30%, white 35%, 
+		$red 35%, $red 40%, 
+		white 40%, white 45%, 
+		$red 45%, $red 50%, 
+		white 50%, white 55%, 
+		$red 55%, $red 60%, 
+		white 60%, white 65%, 
+		$red 65%, $red 70%, 
+		white 70%, white 75%, 
+		$red 75%, $red 80%, 
+		white 80%, white 85%, 
+		$red 85%, $red 90%, 
+		white 90%, white 95%,
+		$red 95%, $red
+		));
 	padding: 1em;
-	background-size: 50px 50px;
+	background-size: 24em 24em;
 	border-radius: 10px;
 }
 main {

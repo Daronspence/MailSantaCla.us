@@ -25,7 +25,7 @@ h1 {
   background: -o-linear-gradient(-45deg, #ffffff 0%, #ffffff 5%, #d95c5c 5%, #d95c5c 10%, #ffffff 10%, #ffffff 15%, #d95c5c 15%, #d95c5c 20%, #ffffff 20%, #ffffff 25%, #d95c5c 25%, #d95c5c 30%, #ffffff 30%, #ffffff 35%, #d95c5c 35%, #d95c5c 40%, #ffffff 40%, #ffffff 45%, #d95c5c 45%, #d95c5c 50%, #ffffff 50%, #ffffff 55%, #d95c5c 55%, #d95c5c 60%, #ffffff 60%, #ffffff 65%, #d95c5c 65%, #d95c5c 70%, #ffffff 70%, #ffffff 75%, #d95c5c 75%, #d95c5c 80%, #ffffff 80%, #ffffff 85%, #d95c5c 85%, #d95c5c 90%, #ffffff 90%, #ffffff 95%, #d95c5c 95%, #d95c5c);
   background: linear-gradient(-45deg, #ffffff 0%, #ffffff 5%, #d95c5c 5%, #d95c5c 10%, #ffffff 10%, #ffffff 15%, #d95c5c 15%, #d95c5c 20%, #ffffff 20%, #ffffff 25%, #d95c5c 25%, #d95c5c 30%, #ffffff 30%, #ffffff 35%, #d95c5c 35%, #d95c5c 40%, #ffffff 40%, #ffffff 45%, #d95c5c 45%, #d95c5c 50%, #ffffff 50%, #ffffff 55%, #d95c5c 55%, #d95c5c 60%, #ffffff 60%, #ffffff 65%, #d95c5c 65%, #d95c5c 70%, #ffffff 70%, #ffffff 75%, #d95c5c 75%, #d95c5c 80%, #ffffff 80%, #ffffff 85%, #d95c5c 85%, #d95c5c 90%, #ffffff 90%, #ffffff 95%, #d95c5c 95%, #d95c5c);
   padding: 1em;
-  background-size: 50px 50px;
+  background-size: 24em 24em;
   border-radius: 10px; }
 
 /* line 47, ../scss/style.scss */
