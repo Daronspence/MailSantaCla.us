@@ -1,12 +1,11 @@
+@import "compass";
+$red: #D95C5C;
 *{ box-sizing: border-box;}
 
 body {
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	background: #4db9e9;
-}
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', Arial, sans-serif;
 }
 
 h1 {
@@ -16,12 +15,33 @@ h1 {
 	padding: 0;
 }
 .container {
-	background: #D95C5C;
+	background: white;
 	width: 50em;
 	margin: 0 auto;
-	background-size: 50px 50px;
-	background-image: linear-gradient(-45deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
+	@include background(linear-gradient(-45deg, 
+										white 0%, white 5%, 
+										$red 5%, $red 10%, 
+										white 10%, white 15%, 
+										$red 15%, $red 20%, 
+										white 20%, white 25%, 
+										$red 25%, $red 30%, 
+										white 30%, white 35%, 
+										$red 35%, $red 40%, 
+										white 40%, white 45%, 
+										$red 45%, $red 50%, 
+										white 50%, white 55%, 
+										$red 55%, $red 60%, 
+										white 60%, white 65%, 
+										$red 65%, $red 70%, 
+										white 70%, white 75%, 
+										$red 75%, $red 80%, 
+										white 80%, white 85%, 
+										$red 85%, $red 90%, 
+										white 90%, white 95%,
+										$red 95%, $red
+										));
 	padding: 1em;
+	background-size: 50px 50px;
 	border-radius: 10px;
 }
 main {
@@ -59,7 +79,7 @@ input {
 	margin: 2em auto;
 }
 .itemerror{
-	color: #D95C5C;
+	color: $red;
 	text-transform: uppercase;
 }
 form div {
@@ -67,7 +87,7 @@ form div {
 	margin-bottom: 1em;
 }
 form div label.error {
-	color: #D95C5C;
+	color: $red;
 	position: absolute;
 	top: 17px;
 	right: -5px;
@@ -124,27 +144,19 @@ footer {
 	color: white;
 	text-shadow: 0 1px 0 #666;
 	font-size: 1.2em;
-}
-footer a {
+
+	 a {
 	color: #D95C5C;
 	text-decoration: none;
-}
-footer a:hover {
-	border-bottom: 1px solid #D95C5C;
-	box-shadow: 0 1px 0 #666;
+		&:hover {
+			border-bottom: 1px solid #D95C5C;
+			box-shadow: 0 1px 0 #666;
+		}
+	}
 }
 #flake {
 	text-shadow: 1px 1px 0 #000;
 }
-/*.delete {
-	text-decoration: none;
-	background: #D95C5C;
-	padding: .5em;
-	border-radius: 10px;
-	text-align: center;
-	color: #fff;
-	text-shadow: 0 -1px 0 #666;
-}*/
 @media (max-width: 52em) {
 	.container {
 		width: 95%;
