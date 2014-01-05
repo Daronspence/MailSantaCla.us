@@ -35,12 +35,16 @@ $('#newItem').keypress(function(e) {
 $(function() {
 	$('#add').on('vclick', addItem);
 	$('#list').on('vclick', '.delete', deleteItem);
-	// if ($(document).width() > 959) {
-	// 	$.fn.snow({minSize: 20, maxSize: 30, newOn: 1200});
-	// }
+	if ($(document).width() > 959) {
+		$.fn.snow({minSize: 20, maxSize: 30, newOn: 1200});
+	}
 	$('.subbtn').prepend('<div id=botcheck><input type=checkbox name=notBot id=notBot /><label for=notBot>I am not a robot</label></div>')
 });
-$('#form').validate();
+$('#form').validate({
+	rules: {
+    	name: { lettersonly: true }
+  }
+});
 var valid = false;
 $(function(){
 	$('#form').on('submit', function(e){
