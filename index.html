@@ -7,54 +7,73 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-46342201-1', 'mailsantacla.us');
-  ga('send', 'pageview');
-</script>
-
+	  ga('create', 'UA-46342201-1', 'mailsantacla.us');
+	  ga('send', 'pageview');
+	</script>
 </head>
 <body>
 
 <div class="container">
 	<main>
+
 	<h1>Mail Santa</h1>
 
+	<noscript>THIS SITE WILL NOT WORK AS INTENDED WITHOUT JAVASCRIPT. PLEASE ENABLE JAVASCRIPT TO CONTINUE.</noscript>
+
 	<p>Every year, Santa spends thousands of hours preparing for this special time of year! To streamline the process, Santa has created this website so you can tell him what you want! Fill out the form below and Santa will reply as soon as possible! Merry Christmas!</p>
+
 	<form id="form" onclick="">
-	<div><label for="Name">Name</label><input type="text" id="Name" name="name" placeholder="Your Name" tabindex="1" required minlength="2"/></div>
-	<div><label for="Email">Your Email</label><input type="email" id="Email" name="email" minlength="5" placeholder="Your Email" tabindex="2" required /></div>
-	<div><label for="Parent-Email">Parent/Guardian Email</label><input type="email" minlength="5" id="Parent-Email" name="parents" placeholder="Parent's Email" tabindex="3" required /></div>
-	<p class="question">What do you want for Christmas?</p>
+
+		<div>
+			<label for="Name">Name</label>
+			<input type="text" id="Name" name="name" placeholder="Your Name" tabindex="1" required minlength="2"/>
+		</div>
+
+		<div>
+			<label for="Email">Your Email</label>
+			<input type="email" id="Email" name="email" minlength="5" placeholder="Your Email" tabindex="2" required />
+		</div>
+
+		<div>
+			<label for="Parent-Email">Parent/Guardian Email</label>
+			<input type="email" minlength="5" id="Parent-Email" name="parents" placeholder="Parent's Email" tabindex="3" required />
+		</div>
+
+		<p class="question">What do you want for Christmas?</p>
 
 		<div id="iteminput">
 			<input type="text" id="newItem" placeholder="A puppy!" tabindex="4"><a id="add">Add</a>
 		</div>
 
-			<div id="list">
+		<div id="list">
+		</div>
 
-			</div>
 		<p class="itemerror"></p>
-	<p class="subbtn"><input type="submit" id="submit"/></p>
+		<p class="subbtn"><input type="submit" id="submit"/></p>
 
-</form>
+	</form>
+
 	</main>
-
-</div>
 
 <div id="results"> 
 	<p id="returnmsg" class="success"></p>
 </div>
+
+</div>
+
+
 
 <footer>
 	<p>Proudly Sponsored by <a href="http://www.reddit.com/user/ozme">Ozme</a> on <a href="http://reddit.com">Reddit</a></p>
 	<p>Created by <a href="http://daronspence.com">Daron Spence</a> | Copyright 2013 &copy;</p>
 </footer>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/script-ck.js"></script>
 </body>
 </html>

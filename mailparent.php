@@ -7,8 +7,7 @@ if(isset($_POST['name'], $_POST['parents'], $_POST['items'], $_POST['notBot'])) 
 
 	$notBot = $_POST['notBot'];
 	if ($notBot == true) {
-		set_include_path('../../daronspe/php/swift/lib/');
-		 require_once "swift_required.php";
+		require_once "lib/swift_required.php";
 
 		$name = $_POST['name'];
 		$parentemail = $_POST['parents'];
@@ -24,7 +23,7 @@ if(isset($_POST['name'], $_POST['parents'], $_POST['items'], $_POST['notBot'])) 
 		# add comma and copy recipient address for more
 
 
-		$html = "<p>Seasons greetings!</p><p>".$name." submitted a Christmas list on <a href='http://mailsantacla.us'>MailSantaCla.us</a> and listed you as their Parent/Guardian.</p><p>If you are not the intended recipient, please ignore this message.</p><p>Here is a copy of the list ".$name." submitted...</p><ul><li>".$itemsstring."</li></ul><p>We at <a href='http://mailsantacla.us'>MailSantaCla.us</a>, created this site to help parents out in this stressful time of year. Hopefully we acheived our goal!</p><p>Merry Christmas,</p><h3>The MailSantaCla.us Team</h3>";
+		$html = "<p>Seasons greetings!</p><p>".$name." submitted a Christmas list on <a href='http://mailsantacla.us' style='color:#d95c5c;''>MailSantaCla.us</a> and listed you as their Parent/Guardian.</p><p>If you are not the intended recipient, please ignore this message.</p><p>Here is a copy of the list ".$name." submitted...</p><ul><li>".$itemsstring."</li></ul><p>We at <a href='http://mailsantacla.us' style='color:#d95c5c;'>MailSantaCla.us</a>, created this site to help parents out in this stressful time of year. Hopefully we acheived our goal!</p><p>Merry Christmas,</p><h3 style='color:#d95c5c;'>The MailSantaCla.us Team</h3>";
 
 		$transport = Swift_SmtpTransport::newInstance('smtp.mandrillapp.com', 587);
 		$transport->setUsername('daronspence@gmail.com');
